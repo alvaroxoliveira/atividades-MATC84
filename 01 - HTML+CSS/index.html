@@ -22,8 +22,24 @@
       </header>
       <form method="POST" action="#">
         <section class="informacoesPrincipais">
-          <input id="nome" type="text" placeholder="Insira seu nome completo" />
-          <input id="telefone" type="tel" placeholder="Insira seu celular" />
+          <input 
+            id="nome" 
+            type="text" 
+            pattern="[a-zA-Z\s]+$" 
+            placeholder="Insira seu nome completo" 
+          />
+          <input 
+            id="telefone" 
+            type="tel" 
+            pattern="\([0-9]{3}\)[\s][0-9]{5}-[0-9]{4}" 
+            placeholder="Insira seu telefone (DDD) XXXXX-XXXX" 
+          />
+          <input 
+            id="celular" 
+            type="tel" 
+            pattern="\([0-9]{3}\)[\s][0-9]{5}-[0-9]{4}" 
+            placeholder="Insira seu celular" 
+          />
           <input
             id="password"
             type="password"
@@ -51,6 +67,7 @@
           </select>
         </section>
         <div class="actions">        
+          <button id="limpar" type="reset">Limpar</button>
           <button type="submit">Enviar</button>
         </div>
       </form>
