@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Promoção!!!</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div id="head">
+        <div id="head-banner">
+            <h1 id="banner">
+                DESCONTO VÁLIDO SOMENTE NAS PRÓXIMAS 5 HORAS
+            </h1>
+        </div>
+        <div id="head-button">
+            <button id="clickpopup" >
+                CLIQUE AQUI PARA OBTER O SEU CUPOM DE 50% DE DESCONTO
+            </button>
+        </div>
+    </div>
+    <!--CRIE SUA POPUP AQUI-->
+
+    <div class="popup-content">
+        <div id="popup">
+        </div>
+    </div>
+
+  </body>
+  <script>
+        const popup = document.getElementById("popup")
+
+        function fechaPopup() {
+            popup.innerHTML = ""
+        }
+
+        function abrePopup() {
+
+            const popup = document.getElementById("popup")
+
+            const popupHtml = `
+            <div id="box-popup">
+                <div id="head-popup">
+                    <button id="button-popup">
+                        <div id="conteudo-botao"> x </div>
+                    </button>
+                </div>
+                <div id="body-popup">
+                    <div id="title-body-popup">
+                        <h1> CUPOM: LABWEB20212</h1>
+                    </div>
+                </div>
+            </div>
+            `
+            popup.innerHTML = popupHtml
+        }
+
+        const botaoAbrePopup = document.getElementById("clickpopup")
+        
+        botaoAbrePopup.onclick = () => {
+            abrePopup()
+
+            const botaoFechaPopup = document.getElementById("button-popup")
+            botaoFechaPopup.onclick = () => {
+                fechaPopup()
+            }
+        }
+
+  </script>
+
+</html>

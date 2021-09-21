@@ -1,0 +1,103 @@
+#banner {
+  
+}
+
+body {
+    background-color: #CD853F;
+    margin: 0 !important;
+}
+
+#head {
+    padding: 10px;
+    border-bottom: 3px solid black;
+}
+
+#head-banner {
+    display: flex;
+    justify-content: center;
+}
+
+#head-button {
+    display: flex;
+    justify-content: center;
+}
+
+.clickpopup {
+    position: absolute;
+}
+
+#clickpopup {
+    padding: 15px;
+    background-color: #D2691E;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+button#clickpopup:hover {
+    background-color: #DEB887;
+}
+
+#popup {
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    position: fixed;
+    font-size: 25px;
+    padding-top: 100px;
+    background-color: #F4A460;
+    margin: 0;
+}
+
+#box-popup {
+    height: 55%;
+    background-color: #DEB887;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+#head-popup {
+    height: 40px;
+    width: 100%;
+    background-color: #A0522D;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 3px solid black;
+}
+
+
+#button-popup {
+    font-size: 30px;
+    background-color: #8B4513;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 10%;
+    border: 0;
+    margin-right: 5px;
+    height: 80%;
+    cursor: pointer;
+}
+
+#button-popup:hover {
+    background-color: #DEB887;
+}
+
+#conteudo-botao {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.popup-content {
+    margin: auto;
+}
+
