@@ -1,20 +1,40 @@
-#banner {
-    color: rgb(22, 19, 19);
+html {
+    height: 100vh;
+    width: 100vw;
 }
 
 body {
-    background-color: #CD853F;
+    width: 100vw;
+    height: 100vh;
     margin: 0 !important;
+    background-color: #CD853F;
 }
 
-#head {
+#content-pag {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#head-pag {
     padding: 10px;
     border-bottom: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #head-banner {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#banner {
+    margin: 0;
+    padding: 10px;
 }
 
 #head-button {
@@ -22,39 +42,36 @@ body {
     justify-content: center;
 }
 
-.clickpopup {
-    position: absolute;
-}
-
 #clickpopup {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
     padding: 15px;
     background-color: #D2691E;
     border-radius: 20px;
-    border: 3px solid black;
+    border: 2px solid black;
+    cursor: pointer;
 }
 
-button#clickpopup:hover {
+#clickpopup:hover {
     background-color: #DEB887;
 }
 
-#popup {
-    left: 0;
-    right: 0;
-    z-index: 1;
-    width: 100%;
+div#popup-content {
     height: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: auto;
-    position: fixed;
-    font-size: 25px;
+    width: 100%;
     padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #F4A460;
-    margin: 0;
 }
 
-#box-popup {
-    height: 55%;
+#popup {
+    height: 51%;
+    width: 35%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
     background-color: #DEB887;
     border-radius: 15px;
     border: 3px solid black;
@@ -72,16 +89,15 @@ button#clickpopup:hover {
     border-bottom: 3px solid black;
 }
 
-
 #button-popup {
+    height: 70%;
     font-size: 30px;
     background-color: #8B4513;
-    vertical-align: middle;
     text-align: center;
-    border-radius: 10%;
+    border-radius: 50%;
+    padding-bottom: 5px;
     border: 0;
     margin-right: 5px;
-    height: 80%;
     cursor: pointer;
 }
 
@@ -89,7 +105,7 @@ button#clickpopup:hover {
     background-color: #DEB887;
 }
 
-#conteudo-botao {
+#button-content {
     height: 100%;
     width: 100%;
     display: flex;
@@ -97,7 +113,25 @@ button#clickpopup:hover {
     align-content: center;
 }
 
-.popup-content {
-    margin: auto;
+#body-popup {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+#text-body-popup {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#text-cupom {
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
