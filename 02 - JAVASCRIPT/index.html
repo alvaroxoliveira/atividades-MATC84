@@ -4,56 +4,60 @@
   <head>
     <meta charset="UTF-8">
     <title>Promoção!!!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <div id="head">
-        <div id="head-banner">
-            <h1 id="banner">
-                DESCONTO VÁLIDO SOMENTE NAS PRÓXIMAS 5 HORAS
-            </h1>
+    <div id="content-pag">
+        <div id="head-pag">
+            <div id="head-banner">
+                <h1 id="banner">
+                    DESCONTO VÁLIDO SOMENTE NAS PRÓXIMAS 5 HORAS!
+                </h1>
+            </div>
+            <div id="head-button">
+                <button id="clickpopup" >
+                    CLIQUE AQUI PARA OBTER O SEU CUPOM DE 50% DE DESCONTO
+                </button>
+            </div>
         </div>
-        <div id="head-button">
-            <button id="clickpopup" >
-                CLIQUE AQUI PARA OBTER O SEU CUPOM DE 50% DE DESCONTO
-            </button>
-        </div>
-    </div>
-    <!--CRIE SUA POPUP AQUI-->
-
-    <div class="popup-content">
-        <div id="popup">
+        <!--CRIE SUA POPUP AQUI-->
+    
+        <div id="popup-content">
+            
         </div>
     </div>
 
   </body>
   <script>
-        const popup = document.getElementById("popup")
+        const popupContent = document.getElementById("popup-content")
 
         function fechaPopup() {
-            popup.innerHTML = ""
+            popupContent.innerHTML = null
         }
 
         function abrePopup() {
 
-            const popup = document.getElementById("popup")
+            // const popupContent = document.querySelector(".popup-content")
 
             const popupHtml = `
-            <div id="box-popup">
-                <div id="head-popup">
-                    <button id="button-popup">
-                        <div id="conteudo-botao"> x </div>
-                    </button>
-                </div>
-                <div id="body-popup">
-                    <div id="title-body-popup">
-                        <h1> CUPOM: LABWEB20212</h1>
+                <div id="popup">
+                    <div id="head-popup">
+                        <button id="button-popup">
+                            <div id="button-content"> x </div>
+                        </button>
+                    </div>
+                    <div id="body-popup">
+                        <div id="text-body-popup">
+                            <h1 id="text-cupom"> CUPOM: LABWEB20212 </h1>
+                        </div>
                     </div>
                 </div>
-            </div>
             `
-            popup.innerHTML = popupHtml
+            popupContent.innerHTML = popupHtml
         }
 
         const botaoAbrePopup = document.getElementById("clickpopup")
