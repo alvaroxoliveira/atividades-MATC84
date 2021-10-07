@@ -50,9 +50,11 @@ class DesafiosJsonXml(unittest.TestCase):
 <?xml version=\"1.0\"?>\
 <dados>\
     <carro nome=\"Golf\">\
+		<golf_sapao_2002/>\
 		<fabricante nome=\"Volkswagen\" origem=\"Alemanha\"/>\
 	</carro>\
     <carro nome=\"Uno Mille\">\
+		<uno_biturbo_com_escada_em_cima/>\
 		<fabricante nome=\"Fiat\" origem=\"Itália\"/>\
 	</carro>\
 </dados>\
@@ -103,11 +105,11 @@ class DesafiosJsonXml(unittest.TestCase):
 		for child in root:
 			self.assertEqual(child.tag, "carro")
 		self.assertEqual(root[0].attrib["nome"], "Golf")
-		self.assertEqual(root[0][0].attrib["nome"], "Volkswagen")
-		self.assertEqual(root[0][0].attrib["origem"], "Alemanha")
+		self.assertEqual(root[0][1].attrib["nome"], "Volkswagen")
+		self.assertEqual(root[0][1].attrib["origem"], "Alemanha")
 		self.assertEqual(root[1].attrib["nome"], "Uno Mille")
-		self.assertEqual(root[1][0].attrib["nome"], "Fiat")
-		self.assertEqual(root[1][0].attrib["origem"], "Itália")
+		self.assertEqual(root[1][1].attrib["nome"], "Fiat")
+		self.assertEqual(root[1][1].attrib["origem"], "Itália")
 
 	def test_desafio_5(self):
 		resposta_do_aluno = self.reposta_5()
