@@ -50,11 +50,11 @@ class DesafiosJsonXml(unittest.TestCase):
 <?xml version=\"1.0\"?>\
 <dados>\
     <carro nome=\"Golf\">\
-		<golf_sapao_2008/>\
+		<aux/>\
 		<fabricante nome=\"Volkswagen\" origem=\"Alemanha\"/>\
 	</carro>\
     <carro nome=\"Uno Mille\">\
-		<uno_biturbo_com_escada_em_cima/>\
+		<aux/>\
 		<fabricante nome=\"Fiat\" origem=\"Itália\"/>\
 	</carro>\
 </dados>\
