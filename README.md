@@ -7,4 +7,4 @@ Alunos:
 + Bárbara Gabrielle
 + Carlos Neto
 + Matheus Soares
-+ Vanessa Machado
++ Vanessa Machado Araújo
